@@ -34,3 +34,17 @@ if (raqam && minus && plus && qaytarish) {
   });
   yangila();
 }
+
+//belgi sanaydi
+const message = document.getElementById("message");
+const belgi = document.getElementById("belgi");
+
+if (message && belgi) {
+  function sana() {
+    belgi.textContent = message.value.length;
+  }
+
+  message.addEventListener("input", sana);
+
+  sana();
+}
